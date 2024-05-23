@@ -32,6 +32,7 @@
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
+  background-color: rgba(248, 253, 255, 1);
 }
 
 html {
@@ -282,33 +283,75 @@ pre tt:after {
   padding: 12px 45px;
 }
 
-ul {
-  list-style-type: none;
+.main_hero_section {
+  padding: 5px 110px;
 }
 
-.main_nav ul {
-  display: flex;
-  align-items: center;
-  gap: 60px;
+.special_text {
+  color: #003b79;
 }
 
-.main_nav li {
+.hero-button button:first-child {
+  border-radius: 30px;
   font-weight: 600;
-  cursor: pointer;
+  padding: 15px 55px;
 }
 
-.main_nav button {
-  background-color: rgba(0, 115, 255, 1);
-  font-weight: 600;
+.hero-button button:last-child {
+  border-radius: 30px;
+  background-color: aliceblue;
   border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 40px;
-  padding: 12px 45px;
+  padding: 15px 55px;
+  font-weight: 600;
+  color: rgba(0, 115, 255, 1);
 }
 
-@media screen and (max-width : 800px) {
+.hero-card {
+  width: 70%;
+  height: 490px;
+  background-color: #ebeeff;
+  border-radius: 10px;
+  border: none;
+}
+
+@media screen and (max-width : 1000px) {
   .navbar-custom {
     padding: 25px 20px;
+  }
+
+  .main_hero_section {
+    padding: 10px 20px;
+  }
+
+  .main_hero_section h1 {
+    text-align: justify;
+    font-size: 35px;
+  }
+
+  .main_hero_section h5 {
+    text-align: justify;
+    font-size: 20px;
+  }
+
+  .main_hero_section p {
+    text-align: justify;
+    font-size: 13px;
+  }
+
+  .hero-button button:first-child {
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+
+  .hero-button button:last-child {
+    border-radius: 30px;
+    background-color: aliceblue;
+    border: none;
+    font-size: 13px;
+    padding: 8px 20px;
+    font-weight: 600;
+    color: rgba(0, 115, 255, 1);
   }
 }
